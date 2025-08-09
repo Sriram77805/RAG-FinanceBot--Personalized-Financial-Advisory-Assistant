@@ -34,19 +34,47 @@
 ## 🗂 Architecture Overview
 ```mermaid
 flowchart TD
-    A[💬 User Input] --> B[📑 ChromaDB Metadata Filtering]
-    B --> C[🧠 FAISS Semantic Search (MiniLM Embeddings)]
-    C --> D[🤖 Google Gemini API - Advice Generation]
-    D --> E[💹 yFinance API - Real-Time Market Data]
-    E --> F[📜 Final Recommendation Output]
+    A[User Input] --> B[ChromaDB Metadata Filtering]
+    B --> C[FAISS Semantic Search (MiniLM Embeddings)]
+    C --> D[Google Gemini API - Advice Generation]
+    D --> E[yFinance API - Real-Time Market Data]
+    E --> F[Final Recommendation Output]
+```
 
-##🚀 Getting Started
+---
 
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/financial-advisor-chatbot.git cd financial-advisor-chatbot
-2️⃣ Install Dependencies
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Sriram77805/RAG-FinanceBot--Personalized-Financial-Advisory-Assistant.git
+cd RAG-FinanceBot--Personalized-Financial-Advisory-Assistant
+```
+
+### 2️⃣ Install Dependencies
+```bash
 pip install faiss-cpu chromadb yfinance sentence-transformers google-generativeai ipython
-3️⃣ Configure Gemini API
+```
+
+### 3️⃣ Configure Gemini API
+```python
 import google.generativeai as genai
 genai.configure(api_key="YOUR_API_KEY")
+```
+
+### 4️⃣ Run the Notebook
+- Open in **Jupyter Notebook** or **Google Colab**  
+- Load embeddings, enter preferences, and generate AI-driven investment suggestions.
+
+---
+
+## 📊 Example Output
+**Top 5 Suggested Stocks:**
+1. **AAPL** – Stable growth, ideal for balanced portfolios.  
+2. **TSLA** – High growth potential for risk-tolerant investors.  
+3. **MSFT** – Consistent performer in the tech sector.  
+4. **NVDA** – Strong market momentum in AI and gaming.  
+5. **JNJ** – Defensive healthcare option with steady dividends.  
+
+---
 
