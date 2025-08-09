@@ -39,3 +39,14 @@ flowchart TD
     C --> D[🤖 Google Gemini API - Advice Generation]
     D --> E[💹 yFinance API - Real-Time Market Data]
     E --> F[📜 Final Recommendation Output]
+
+##🚀 Getting Started
+
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/financial-advisor-chatbot.git cd financial-advisor-chatbot
+2️⃣ Install Dependencies
+pip install faiss-cpu chromadb yfinance sentence-transformers google-generativeai ipython
+3️⃣ Configure Gemini API
+import google.generativeai as genai
+genai.configure(api_key="YOUR_API_KEY")
+
